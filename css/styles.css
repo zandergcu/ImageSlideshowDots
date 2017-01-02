@@ -7,19 +7,19 @@ border: 0px;
 
 body {
     background: rgb(30,30,30);
+    height: 100%;
+    width: 100%;
 }
 
 .mySlides {
     display:none;
-    width:100;
+    width:100%;
 }
 
 .container{
     position: absolute;
-    top: 25%;
-    left:18%;
-    width: 800px;
-    height: 280px;
+    top: 20%;
+    left:15%;
 }
 
 .circleNav {   
@@ -30,8 +30,8 @@ body {
     background: transparent;
     border: 1px solid white;
     position: absolute;
-    top:230px;
-    left:350px;
+    top:75%;
+    left:44%;
     cursor: pointer;
 }
 
@@ -43,13 +43,9 @@ body {
     background: white;
 }
 
-
-
-
-
 .arrow{
     position: absolute;
-    top:110px;
+    top:35%;
     color: rgb(140,140,140);
     font-size: 40px;
     cursor: pointer;
@@ -60,11 +56,15 @@ body {
 }
 
 .arrowL {
-    left:30px;
+    left:2%;
 }
 
 .arrowR {
-    left:760px;
+    left:94%;
+}
+
+.arrow::selection {
+    background: rgba(0,0,0,0);
 }
 
 .moveR {  
@@ -74,3 +74,37 @@ body {
 .moveR2 {  
     transform: translateX(70px);   
 }
+
+.mySlides {
+    width:100%;
+}
+
+
+
+ 
+@media screen and (max-width: 400px){
+    
+    .circleNav {   
+        height:15px;
+        width:15px;
+        left: 38%;
+    }
+    
+    .moveR {  
+        transform: translateX(20px);   
+    }
+
+    .moveR2 {  
+        transform: translateX(40px);   
+    }
+    
+    .arrow {
+        font-size: 25px;
+    }
+    
+    .container{
+        top: 10%;
+        left:10%;
+    }
+}
+
